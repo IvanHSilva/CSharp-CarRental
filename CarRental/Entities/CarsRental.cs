@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace CarRental.Entities {
-    public class CarRental {
+    public class CarsRental {
         // Attributes
         public DateTime Start { get; set; }
         public DateTime Finish { get; set; }
@@ -9,7 +9,7 @@ namespace CarRental.Entities {
         public Invoice Invoice { get; set; }
 
         // Constructors
-        public CarRental(DateTime start, DateTime finish, Vehicle vehicle) {
+        public CarsRental(DateTime start, DateTime finish, Vehicle vehicle) {
             Start = start;
             Finish = finish;
             Vehicle = vehicle;
