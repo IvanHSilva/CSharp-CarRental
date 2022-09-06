@@ -26,7 +26,7 @@ namespace CarRentalApp {
             double pricePerDay = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             CarsRental carsRental = new CarsRental(start, finish, new Vehicle(model));
-            RentalService rentalService = new RentalService(pricePerHour, pricePerDay);
+            RentalService rentalService = new RentalService(pricePerHour, pricePerDay, new BrazilianTaxService());
             rentalService.ProcessInvoice(carsRental);
             Console.WriteLine("PAGAMENTO:");
             Console.WriteLine(carsRental.Invoice);

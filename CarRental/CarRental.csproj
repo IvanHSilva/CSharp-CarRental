@@ -48,7 +48,8 @@
     <Compile Include="Entities\Vehicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\BrazilianTaxServices.cs" />
+    <Compile Include="Services\BrazilianTaxService.cs" />
+    <Compile Include="Services\ITaxService.cs" />
     <Compile Include="Services\RentalService.cs" />
   </ItemGroup>
   <ItemGroup>
